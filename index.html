@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronômetro Pomodoro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+  <div class="container">
+    <h1>Cronômetro Pomodoro</h1>
+    <p id="motivacao">A persistência é o caminho do êxito. — Charles Chaplin</p>
+
+    <div id="timer">25:00</div>
+
+    <div class="controls">
+      <button onclick="startTimer()">Iniciar</button>
+      <button onclick="pauseTimer()">Pausar</button>
+      <button onclick="resetTimer()">Resetar</button>
+    </div>
+
+    <div class="settings">
+      <label>
+        Foco (min):
+        <input type="number" id="focoMin" value="25" min="1" max="120">
+      </label>
+      <label>
+        Pausa (min):
+        <input type="number" id="pausaMin" value="5" min="1" max="60">
+      </label>
+    </div>
+
+    <div id="ciclos">Ciclos concluídos: 0</div>
+
+    <footer>
+        <span style="font-size: 14px;  color: #ffffff;">Desenvolvido com dedicação por </span>
+        <a href="https://github.com/mathpferreira" target="_blank" style="font-size: 14px; color: #2563eb; text-decoration: none;">
+            Matheus Ferreira
+          </a>
+      </footer>
+      
+      
+      <button id="theme-toggle" onclick="toggleTheme()">
+        <img src="icons/theme-icon.png" alt="Alternar tema" width="40" height="40">
+      </button>
+
+    <script src="js/frases.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        resetTimer();
+    </script>  
+</body>
+</html>

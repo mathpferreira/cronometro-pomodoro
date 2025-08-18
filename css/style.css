@@ -1,0 +1,139 @@
+/* Tema base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background: var(--bg-card);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#motivacao {
+    font-size: 15px;
+    margin-bottom: 25px;
+    min-height: 50px;
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+#timer {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Cores dos botões */
+.controls button:nth-child(1) { background-color: #2563eb; color: white; }
+.controls button:nth-child(2) { background-color: #6b7280; color: white; }
+.controls button:nth-child(3) { background-color: #10b981; color: white; }
+
+.controls button:hover {
+    opacity: 0.9;
+}
+
+.settings {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.settings input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg-input);
+    color: inherit;
+    text-align: center;
+}
+
+#status {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#ciclos {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de tema */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+#theme-toggle:hover {
+    opacity: 0.9;
+}
+
+/* Tema Claro */
+body.light {
+    --bg-card: #ffffff;
+    --bg-input: #f3f3f3;
+    --border: #cccccc;
+    background: #f5f5f5;
+    color: #111111;
+    --text-muted: #555;
+}
+
+/* Tema Escuro */
+body.dark {
+    --bg-card: #1f2937;
+    --bg-input: #374151;
+    --border: #444;
+    background: #111827;
+    color: #f9fafb;
+    --text-muted: #aaa;
+}
