@@ -23,6 +23,3 @@ O método Pomodoro é uma técnica de gestão de tempo criada por Francesco Ciri
 4. Personalize tempo de foco e pausa se desejar.
 
 ## Desenvolvido com dedicação por [Matheus Ferreira](https://github.com/mathpferreira)
-
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
